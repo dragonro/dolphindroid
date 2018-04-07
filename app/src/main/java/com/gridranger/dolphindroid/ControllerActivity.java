@@ -96,13 +96,21 @@ public class ControllerActivity extends Activity implements SensorEventListener 
         maskMap.put(R.id.button_minus, 1 << 5);
         maskMap.put(R.id.button_home, 1 << 6);
         maskMap.put(R.id.button_up, 1 << 7);
+        maskMap.put(R.id.button_north, 1 << 7);
         maskMap.put(R.id.button_down, 1 << 8);
+        maskMap.put(R.id.button_south, 1 << 8);
         maskMap.put(R.id.button_left, 1 << 9);
+        maskMap.put(R.id.button_west, 1 << 9);
         maskMap.put(R.id.button_right, 1 << 10);
+        maskMap.put(R.id.button_east, 1 << 10);
         maskMap.put(R.id.button_ul, 1 << 7 | 1 << 9);
+        maskMap.put(R.id.button_north_west, 1 << 7 | 1 << 9);
         maskMap.put(R.id.button_ur, 1 << 7 | 1 << 10);
+        maskMap.put(R.id.button_north_east, 1 << 7 | 1 << 10);
         maskMap.put(R.id.button_dl, 1 << 8 | 1 << 9);
+        maskMap.put(R.id.button_south_west, 1 << 8 | 1 << 9);
         maskMap.put(R.id.button_dr, 1 << 8 | 1 << 10);
+        maskMap.put(R.id.button_south_east, 1 << 8 | 1 << 10);
 
         for (Map.Entry<Integer, Integer> entry : maskMap.entrySet()) {
             Button b = (Button) findViewById(entry.getKey());
