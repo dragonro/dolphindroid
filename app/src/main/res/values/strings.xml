@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Dolphindroid</string>
+    <string name="app_name">Dolphindroid 2018</string>
     <string name="about">About</string>
     <string name="about_content">Copyright © 2015, Flavio Zavan.
+        2018 version by Bárdos Dávid.
         This application is free software,
-        for more information and access to the source code, visit
-        http://github.com/nebososo/dolphindroid</string>
+        for more information and access to
+        the source code, please visit
+        http://github.com/gridranger/dolphindroid</string>
     <string name="server_address">Server Address</string>
     <string name="server_port">Server Port</string>
     <string name="custom_connection">Custom Connection</string>

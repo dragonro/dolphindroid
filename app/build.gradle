@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
+    compileSdkVersion 27
     buildToolsVersion '27.0.3'
 
     defaultConfig {
-        applicationId "com.nebososo.dolphindroid"
-        minSdkVersion 3
+        applicationId "com.gridranger.dolphindroid"
+        minSdkVersion 4
         targetSdkVersion 27
         versionCode 1
         versionName "0.1"

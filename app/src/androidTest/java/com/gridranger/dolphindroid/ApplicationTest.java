@@ -1,4 +1,4 @@
-package com.nebososo.dolphindroid;
+package com.gridranger.dolphindroid;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
