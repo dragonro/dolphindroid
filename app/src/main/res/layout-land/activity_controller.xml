@@ -16,17 +16,16 @@
     <ImageButton
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_alignParentEnd="true"
         android:contentDescription="@string/change_orientation"
         android:background="@drawable/ic_blank_button"
         android:src="@android:drawable/ic_menu_always_landscape_portrait"
         android:onClick="changeOrientation"/>
 
     <RelativeLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true">
+        android:layout_centerVertical="true">
         <ImageView
             android:layout_width="120dp"
             android:layout_height="120dp"
@@ -85,70 +84,68 @@
     </RelativeLayout>
 
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="145dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true">
-        <Button
-            android:id="@+id/button_a"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginEnd="10dp"
-            android:background="@drawable/ic_a_button"
-            android:contentDescription="@string/a" />
+        android:layout_marginStart="145dp"
+        android:layout_centerVertical="true">
         <Button
             android:id="@+id/button_b"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
             android:contentDescription="@string/b"
             android:background="@drawable/ic_b_button" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="false"
-        android:layout_marginBottom="160dp">
         <Button
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:contentDescription="@string/minus"
-            android:id="@+id/button_minus"
-            android:background="@drawable/ic_minus_button" />
-
-        <Button
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:contentDescription="@string/home"
-            android:id="@+id/button_home"
-            android:background="@drawable/ic_home_button"/>
-
-        <Button
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:contentDescription="@string/plus"
-            android:id="@+id/button_plus"
-            android:background="@drawable/ic_plus_button"/>
+            android:id="@+id/button_a"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_a_button"
+            android:contentDescription="@string/a" />
     </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true">
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="160dp">
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/plus"
+            android:id="@+id/button_plus"
+            android:background="@drawable/ic_plus_button"/>
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@string/home"
+            android:id="@+id/button_home"
+            android:background="@drawable/ic_home_button"/>
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/minus"
+            android:id="@+id/button_minus"
+            android:background="@drawable/ic_minus_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true">
 
         <Button
             android:id="@+id/button_1"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginBottom="40dp"
+            android:layout_marginEnd="40dp"
             android:contentDescription="@string/one"
             android:background="@drawable/ic_1_button"/>
         <Button

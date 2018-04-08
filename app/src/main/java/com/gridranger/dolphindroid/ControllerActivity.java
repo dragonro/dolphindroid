@@ -5,6 +5,8 @@ import android.support.annotation.NonNull;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
 import android.gesture.GestureOverlayView;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -151,6 +153,16 @@ public class ControllerActivity extends Activity implements SensorEventListener 
         };
 
         sendExecutor.schedule(setupSendRunnable, 0, TimeUnit.MILLISECONDS);
+    }
+
+    public void changeOrientation(View view) {
+        int currentOrientation = getResources().getConfiguration().orientation;
+        if (currentOrientation == Configuration.ORIENTATION_LANDSCAPE) {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_PORTRAIT);
+        }
+        else {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR_LANDSCAPE);
+        }
     }
 
     private void scheduleSend() {

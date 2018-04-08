@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.gridranger.dolphindroid"
-        minSdkVersion 4
+        minSdkVersion 9
         targetSdkVersion 27
         versionCode 1
         versionName "0.1"
