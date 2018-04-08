@@ -75,14 +75,27 @@
             android:background="#00ffffff" />
     </RelativeLayout>
 
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
-        android:background="@drawable/ic_a_button"
-        android:id="@+id/button_a"
-        android:contentDescription="@string/a" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="145dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+        <Button
+            android:id="@+id/button_a"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ic_a_button"
+            android:contentDescription="@string/a" />
+        <Button
+            android:id="@+id/button_b"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/b"
+            android:background="@drawable/ic_b_button" />
+    </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
@@ -98,13 +111,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content">
 
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/b"
-                    android:id="@+id/button_b"
-                    android:layout_column="1"
-                    android:layout_weight="1" />
+
             </TableRow>
 
             <TableRow
