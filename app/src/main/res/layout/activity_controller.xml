@@ -98,72 +98,56 @@
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginBottom="160dp">
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/minus"
+            android:id="@+id/button_minus"
+            android:background="@drawable/ic_minus_button" />
 
-        <TableLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="@string/home"
+            android:id="@+id/button_home"
+            android:background="@drawable/ic_home_button"/>
 
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/plus"
+            android:id="@+id/button_plus"
+            android:background="@drawable/ic_plus_button"/>
+    </LinearLayout>
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
 
-            </TableRow>
-
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
-
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/minus"
-                    android:id="@+id/button_minus"
-                    android:layout_column="0"
-                    android:layout_weight="1" />
-
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/home"
-                    android:id="@+id/button_home"
-                    android:layout_column="1"
-                    android:layout_weight="1" />
-
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/plus"
-                    android:id="@+id/button_plus"
-                    android:layout_column="2"
-                    android:layout_weight="1" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content">
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/one"
-                    android:id="@+id/button_1"
-                    android:layout_column="0"
-                    android:layout_weight="1" />
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/two"
-                    android:id="@+id/button_2"
-                    android:layout_column="1"
-                    android:layout_weight="1" />
-            </TableRow>
-
-        </TableLayout>
-
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="40dp"
+            android:contentDescription="@string/one"
+            android:background="@drawable/ic_1_button"/>
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="@string/two"
+            android:id="@+id/button_2"
+            android:background="@drawable/ic_2_button"/>
     </LinearLayout>
 
 </RelativeLayout>
