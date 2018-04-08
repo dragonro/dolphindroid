@@ -32,50 +32,50 @@
             android:contentDescription="@string/directional_button"
             android:src="@drawable/ic_directional" />
         <Button
-            android:id="@+id/button_north_west"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="#00ffffff" />
-        <Button
-            android:id="@+id/button_north"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="40dp"
-            android:background="#00ffffff" />
-        <Button
             android:id="@+id/button_north_east"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginStart="80dp"
-            android:background="#00ffffff" />
-        <Button
-            android:id="@+id/button_west"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="40dp"
             android:background="#00ffffff" />
         <Button
             android:id="@+id/button_east"
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:background="#00ffffff" />
+        <Button
+            android:id="@+id/button_south_east"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="80dp"
+            android:background="#00ffffff" />
+        <Button
+            android:id="@+id/button_north"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:background="#00ffffff" />
+        <Button
+            android:id="@+id/button_south"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginTop="40dp"
             android:layout_marginStart="80dp"
             android:background="#00ffffff" />
         <Button
-            android:id="@+id/button_south_west"
+            android:id="@+id/button_north_west"
             android:layout_width="40dp"
             android:layout_marginTop="80dp"
             android:layout_height="40dp"
             android:background="#00ffffff" />
         <Button
-            android:id="@+id/button_south"
+            android:id="@+id/button_west"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginTop="80dp"
             android:layout_marginStart="40dp"
             android:background="#00ffffff" />
         <Button
-            android:id="@+id/button_south_east"
+            android:id="@+id/button_south_west"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginTop="80dp"
