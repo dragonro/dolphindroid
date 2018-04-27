@@ -126,10 +126,13 @@ public class ConnectionActivity extends Activity {
     }
 
     private void startReceivingBroadcasts() {
+        final AlertDialog udpWarningDialog = getUdpWarningDialog();
         try {
             broadcastSocket = new DatagramSocket(4431);
         } catch (SocketException e) {
             e.printStackTrace();
+            udpWarningDialog.show();
+            return;
         }
         try {
             /* Hack for simulating a non-blocking socket */
@@ -188,6 +191,14 @@ public class ConnectionActivity extends Activity {
         };
         maintenanceExecutor.scheduleAtFixedRate(maintainServerListRunnable, 200, 200,
                 TimeUnit.MILLISECONDS);
+    }
+
+    private AlertDialog getUdpWarningDialog() {
+        AlertDialog.Builder updWarningDialogBuilder = new AlertDialog.Builder(this);
+        updWarningDialogBuilder.setMessage(R.string.udp_warning);
+        updWarningDialogBuilder.setTitle(R.string.udp_warning_title);
+        updWarningDialogBuilder.setNegativeButton(R.string.ok, null);
+        return updWarningDialogBuilder.create();
     }
 
     private void stopReceivingBroadcasts() {

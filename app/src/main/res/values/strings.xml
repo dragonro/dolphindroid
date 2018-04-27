@@ -36,6 +36,11 @@
     <string name="presses_to_go">" more back button presses to disconnect"</string>
     <string name="resolv_failed">Failed to resolve hostname</string>
     <string name="socket_failed">Failed to open socket</string>
+    <string name="udp_warning_title">UDP warning</string>
+    <string name="udp_warning">Failed to map available Dolphin sockets due to device
+        security settings or port conflict. Please use the Custom button to setup
+        the connection manually.</string>
+    <string name="ok">Okay</string>
 
 
 </resources>
