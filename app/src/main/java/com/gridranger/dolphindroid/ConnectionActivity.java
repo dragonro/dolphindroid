@@ -208,7 +208,11 @@ public class ConnectionActivity extends Activity {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        broadcastSocket.close();
+        try {
+            broadcastSocket.close();
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
     }
 
     private void switchToController(String address, int port, boolean custom) {
