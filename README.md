@@ -1,4 +1,4 @@
-# dolphindroid
+# UDPmote (previously Dolphindroid 2018)
 Android UDPWii client
 
 - Emulates the IR sensor using the touchpad

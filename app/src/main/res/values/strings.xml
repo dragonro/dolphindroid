@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Dolphindroid 2018</string>
+    <string name="app_name">UDPmote</string>
     <string name="about">About</string>
     <string name="about_content">Copyright © 2015, Flavio Zavan.
         2018 version by Bárdos Dávid.

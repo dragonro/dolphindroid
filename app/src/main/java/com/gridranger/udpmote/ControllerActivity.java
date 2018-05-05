@@ -1,4 +1,4 @@
-package com.gridranger.dolphindroid;
+package com.gridranger.udpmote;
 
 import android.annotation.SuppressLint;
 import android.support.annotation.NonNull;
@@ -62,7 +62,7 @@ public class ControllerActivity extends Activity implements SensorEventListener 
         backToast = Toast.makeText(getApplicationContext(), null, Toast.LENGTH_SHORT);
         PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
         //noinspection deprecation
-        wl = pm.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK, "dolphindroid");
+        wl = pm.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK, "udpmote");
 
         SensorManager sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         sensorManager.registerListener(this,

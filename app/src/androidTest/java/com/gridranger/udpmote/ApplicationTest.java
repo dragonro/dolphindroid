@@ -1,4 +1,4 @@
-package com.gridranger.dolphindroid;
+package com.gridranger.udpmote;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

@@ -1,4 +1,4 @@
-package com.gridranger.dolphindroid;
+package com.gridranger.udpmote;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
