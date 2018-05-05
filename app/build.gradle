@@ -5,10 +5,10 @@ android {
     buildToolsVersion '27.0.3'
 
     defaultConfig {
-        applicationId "com.gridranger.udpmote"
+        applicationId "com.gridranger.dolphindroid"
         minSdkVersion 9
         targetSdkVersion 27
-        versionCode 2
+        versionCode 3
         versionName "0.1.1"
     }
     buildTypes {
